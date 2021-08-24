@@ -550,6 +550,11 @@
 	color: #000;
 }
 
+.desc_thumb:hover .desc_thumb_descript p {
+	color: #000!important;
+    text-decoration: underline;
+}
+
 .desc_thumb .img_box {
 	height: 195px;
 	position: relative;
