@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'TacticSans-Med';
+    src: url('TacticSans-Med.woff2') format('woff2'),
+        url('TacticSans-Med.woff') format('woff'),
+        url('TacticSans-Med.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TacticSans-Reg';
+    src: url('TacticSans-Reg.woff2') format('woff2'),
+        url('TacticSans-Reg.woff') format('woff'),
+        url('TacticSans-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TacticSans-Bld';
+    src: url('TacticSans-Bld.woff2') format('woff2'),
+        url('TacticSans-Bld.woff') format('woff'),
+        url('TacticSans-Bld.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
