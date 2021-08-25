@@ -699,6 +699,7 @@
 .yellow_input input::placeholder,
 .yellow_input textarea::placeholder {
 	color: #b1b3b6;
+	font-size: 14px;
 }
 
 .add_photo_2 {
@@ -863,7 +864,7 @@
 
 .resume_title_2 {
 	padding: 19px 0 8px 0;
-	font-family: 'TacticSans-Bld';
+	font-family: 'TacticSans-Med';
 	font-size: 16px;
 	line-height: 20px;
 	color: #000;
