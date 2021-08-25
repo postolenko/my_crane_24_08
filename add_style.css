@@ -969,6 +969,21 @@
 	margin-top: 8px;
 }
 
+.append_templ {
+	height: 0;
+	overflow: hidden;
+}
+
+.appendBtn:after {
+    content: '';
+    background: url(img/i.arrow-down.svg) no-repeat center /contain;
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+}
+
 @media only screen and (max-width: 1200px) {
 
 	.resume_templ {
