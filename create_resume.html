@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Crane</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="./fonts/stylesheet.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link href="add_style.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- HEADER START -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/Mycrane_Logo.png" alt="MyCrane Логотип"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item nav-item-dropdown active">
+                            <a class="nav-link" href="#">О нас</a>
+
+                            <ul class="header__dropdown">
+                                <li class="header__dropdown-item">
+                                    <a href="#" class="header__dropdown-link">О нас</a>
+                                </li>
+
+                                <li class="header__dropdown-item">
+                                    <a href="#" class="header__dropdown-link">Контакты</a>
+                                </li>
+
+                                <li class="header__dropdown-item">
+                                    <a href="#" class="header__dropdown-link">Mycrane World</a>
+                                </li>
+
+                                <li class="header__dropdown-item">
+                                    <a href="#" class="header__dropdown-link">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                     
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-secondary btn-active">Подать объявление +</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-contacts">
+                        <a class="contact-item" href="tel:+79671927021">+7 (962) 192 70 21</a>
+                    </div>
+
+                    <div class="navbar-links">
+                        <a class="link-item" href="#">Войти</a>
+                        <a class="link-item" href="#"  data-popup-link = "popup_1">Регистрация</a>
+                    </div>
+
+                    <form action="/" class="header__search">
+                        <input type="text" class="input__elem header__search-input" placeholder="Поиск:">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="img/1.png" alt="">
+          <div class="design text-left">
+            <div class="title">
+              Цифровой <br>
+              сервис <br>
+              по поиску <br>
+              и выбору <br>
+              Исполнителей грузоподъемных услуг
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/1.png" alt="">
+          <div class="design text-left">
+            <div class="title">
+              Тестовый <br>
+              сервис <br>
+              по поиску <br>
+              и выбору <br>
+              Исполнителей грузоподъемных услуг
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/2.jpg" alt="">
+          <div class="design text-left">
+            <div class="title">
+              Вакансии
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/3.jpg" alt="">
+          <div class="design text-left">
+            <div class="title">
+              Резюме
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create Resume -->
+
+  <div class="search_sect bg-yellow">
+    <div class="container">
+      <div class="resume_templ">
+
+        <div class="resume_two_cols">
+          <div class="left_col">
+            <div class="resume_item">
+              <div class="resume_title">Ваше резюме</div>
+              <div class="yellow_input">
+                <input type="text" placeholder="Фамилия" />
+              </div>
+              <div class="yellow_input">
+                <input type="text" placeholder="Имя" />
+              </div>
+              <div class="yellow_input">
+                <input type="text" placeholder="Отчество" />
+              </div>
+              <div class="yellow_input">
+                <input type="text" placeholder="Город проживания" />
+              </div>
+            </div>
+          </div>
+          <div class="right_col">
+            <form runat="server">
+              <label class="add_photo_2" for="imgInp">
+                <input accept="img/*" type="file" id="imgInp">
+                <div class="photo_icon_3_wrapp">
+                  <img id="blah" class="photo_icon_3" src="img/photo_icon.svg" alt="">
+                </div>
+                <h3>Добавьте ваше фото</h3>
+                <p>Это повысит доверие покупателей и сделает ваши объявление привлекательнее</p>
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <div class="resume_item">
+          <div class="resume_title">Основная информация</div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Дата рождения" />
+          </div>
+          <div class="resume_two_cols_2">
+            <div class="left_col">
+              <h3>Пол</h3>
+            </div>
+            <div class="right_col">
+              <div class="resume_inlines">
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_1"><span>Мужской</span></label>
+                </div>
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_1"><span>Женский</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Гражданство" />
+          </div>
+          <div class="resume_two_cols_2 resume_two_cols_2_2">
+            <div class="left_col">
+              <h3>Опыт работы</h3>
+            </div>
+            <div class="right_col">
+              <div class="resume_inlines">
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_2"><span>Да</span></label>
+                </div>
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_2"><span>Нет</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume_item">
+          <div class="resume_title">Специальность</div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Желаемая должность" />
+          </div>
+          <div class="yellow_input">
+            <input type="number" placeholder="Зарплата, руб. на руки" />
+          </div>
+        </div>
+
+        <div class="resume_item">
+          <div class="resume_title_2">Профессиональная</div>
+          <div class="resume_inlines_2">
+            <div>
+              <label class="yellow_ch yellow_ch_2"><input type="checkbox"><span>Оператор</span></label>
+            </div>
+            <div>
+              <label class="yellow_ch yellow_ch_2"><input type="checkbox"><span>Механик</span></label>
+            </div>
+            <div>
+              <label class="yellow_ch yellow_ch_2"><input type="checkbox"><span>Инженер</span></label>
+            </div>
+            <div>
+              <label class="yellow_ch yellow_ch_2"><input type="checkbox"><span>Электрик</span></label>
+            </div>
+            <div>
+              <label class="yellow_ch yellow_ch_2"><input type="checkbox"><span>Программное обеспечение</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume_item resume_item_2">
+          <div class="resume_title">Опыт работы</div>
+          <div class="resume_title_2">Места работы</div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Месяц/Год/Окончание" />
+          </div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Обязанности на рабочем месте" />
+          </div>
+        </div>
+
+        <div class="resume_item resume_item_2">
+          <div class="resume_title">Личная информация</div>
+          <div class="yellow_input">
+            <textarea placeholder="О себе.Ключевые навыки"></textarea>
+          </div>
+        </div>
+
+        <div class="resume_item">
+          <div class="resume_title_2">Образование</div>
+          <select class="input__elem" name="SORT">
+              <option disabled="">Уровень</option>
+              <option value="val_1" selected="">Опция 1</option>
+              <option value="val_2">Опция 2</option>
+          </select>
+        </div>
+
+        <div class="resume_item resume_item_2">
+          <div class="resume_title_2">Владение языками</div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Родной язык" />
+          </div>
+          <div class="yellow_input">
+            <input type="text" placeholder="Иностранный язык" />
+          </div>
+        </div>
+
+        <div class="resume_item resume_item_2">
+          <div class="resume_title">Другая важная информация</div>
+          <div class="resume_two_cols_2 resume_two_cols_2_3 margin_0">
+            <div class="left_col">
+              <h3>Переезд</h3>
+            </div>
+            <div class="right_col">
+              <div class="resume_inlines">
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_3"><span>Да</span></label>
+                </div>
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_3"><span>Нет</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume_two_cols_2 resume_two_cols_2_3 margin_0">
+            <div class="left_col">
+              <h3>Занятость</h3>
+            </div>
+            <div class="right_col">
+              <div class="resume_inlines">
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_4"><span>Полная</span></label>
+                </div>
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_4"><span>Нет</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="yellow_input">
+            <input type="text" placeholder="График работы" />
+          </div>
+          <div class="resume_two_cols_2 resume_two_cols_2_3">
+            <div class="left_col">
+              <h3>Разрешение на работу</h3>
+            </div>
+            <div class="right_col">
+              <div class="resume_inlines">
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_5"><span>Да</span></label>
+                </div>
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_5"><span>Нет</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="yellow_input">
+            <input type="text" placeholder="График работы" />
+          </div>
+          <div class="resume_two_cols_2 resume_two_cols_2_3">
+            <div class="left_col">
+              <h3>Наличие автомобиля</h3>
+            </div>
+            <div class="right_col">
+              <div class="resume_inlines">
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_6"><span>Да</span></label>
+                </div>
+                <div>
+                  <label class="yellow_ch"><input type="radio" name="resume_radio_6"><span>Нет</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="submit_wrapp_2">
+        <button type="button" class="btn btn--small btn-secondary btn-active btn--load-more">Сохранить и опубликовать</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- /Create Resume -->
+
+  <div class="partners">
+      <div class="container">
+          <div class="partners__list row">
+              <div class="partners__item">
+                  <img src="img/partners/terex.svg" alt="terex" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/liebherr.svg" alt="liebherr" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/kobelco.svg" alt="kobelco" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/tadano.svg" alt="tadano" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/Manitowoc.svg" alt="Manitowoc" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/sany.svg" alt="sany" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/xcmg.svg" alt="xcmg" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/zoomlion.svg" alt="zoomlion" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/ZPMC.svg" alt="ZPMC" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/Potain.svg" alt="Potain" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/sennebogen.svg" alt="sennebogen" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/grove.svg" alt="grove" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/ivanovec.svg" alt="ivanovec" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/Klincy.svg" alt="Klincy" class="partners__item-img">
+              </div>
+
+              <div class="partners__item">
+                  <img src="img/partners/galychanin.svg" alt="galychanin" class="partners__item-img">
+              </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+
+  <!-- FOOTER START -->
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="footer__title">Мы в сети</div>
+
+                <div class="social">
+                    <a href="#" class="social__link social__link-fb" title="Facebook"></a>
+                    <a href="#" class="social__link social__link-ln" title="LinkedIn"></a>
+                    <a href="#" class="social__link social__link-insta" title="Instagram"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer__title">Служба поддержки</div>
+
+                <a href="tel:8 800 300 37 46">Тел: 8 800 300 37 46</a>
+                <a href="mailto:info@mycrane.ru">info@mycrane.ru</a>
+
+                <p>© 2021, Сервис поиска исполнителей. <br> Все права защищены</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer__title">О нас</div>
+
+                <a href="#">Контакты</a>
+                <a href="#">Политика конфидециальности</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- Popup -->
+
+  <div class="popup popup_sect" data-popup = "popup_1">
+    <div class="popup_content">
+        <button type="button" class="close_popup"></button>
+        <div class="popup_title">
+          <h3>Регистрация</h3>
+        </div>
+        <div class="inner">
+          <div class="blue_box">
+            <p>Чтобы откликнуться на вакансию,<br /> Вам необходимо зарегистрироваться и создать резюме</p>
+          </div>
+          <div class="reg_from_wrapp">
+            <form>            
+              <div class="reg_input">
+                <label>Введите ваше имя:</label>
+                <input type="text" />
+              </div>
+              <div class="reg_input">
+                <label>Введите номер вашего телефона:</label>
+                <input type="text" />
+              </div>
+              <div class="reg_input">
+                <label>Введите ваш email:</label>
+                <input type="text" />
+              </div>
+              <div class="checkbox_wrapp">
+                <input type="checkbox" />
+                <a href="#" class="link_ch">Принимаю условия Пользовательского соглашения</a>
+              </div>
+              <div class="submit_wrapp">
+                <button type="submit" class="btn btn-active">Зарегистрироватся</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="popup_bg"></div>
+
+  <!-- /Popup -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="./vendors/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
