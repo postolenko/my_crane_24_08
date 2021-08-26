@@ -162,9 +162,8 @@ $(document).ready(function(){
     $("[data-append-btn]").on("click", function(e) {
       e.preventDefault();
       appendName = $(this).attr("data-append-btn");
-      appendTempl = $("[data-append-templ = '"+appendName+"']");
-      appendHTML = appendTempl.html();
-      $("[data-append-content = '"+ appendName +"']").append(appendHTML);
+      appendTempl = $("[data-append-templ = '"+appendName+"'] > div");
+      appendTempl.clone().appendTo("[data-append-content = '"+ appendName +"']");
     });
 
 });
