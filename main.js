@@ -153,7 +153,10 @@ $(document).ready(function(){
     imgInp.onchange = evt => {
       const [file] = imgInp.files
       if (file) {
-        blah.src = URL.createObjectURL(file)
+        console.log(URL.createObjectURL(file));
+        $("#blah").css({
+          "background-image" : "url("+URL.createObjectURL(file)+")"
+        });
       }
     }
 
@@ -164,6 +167,18 @@ $(document).ready(function(){
       appendName = $(this).attr("data-append-btn");
       appendTempl = $("[data-append-templ = '"+appendName+"'] > div");
       appendTempl.clone().prependTo("[data-append-content = '"+ appendName +"']");
+    });
+
+    // -----------
+    
+    $(document).on("change", ".timeCh", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".work_time");
+      if($(this).is(":checked")) {
+        parent.addClass("active");
+      } else {
+        parent.removeClass("active");
+      }
     });
 
 });

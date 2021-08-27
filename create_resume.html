@@ -162,7 +162,9 @@
               <label class="add_photo_2" for="imgInp">
                 <input accept="img/*" type="file" id="imgInp">
                 <div class="photo_icon_3_wrapp">
-                  <img id="blah" class="photo_icon_3" src="img/photo_icon.svg" alt="">
+                  <img class="photo_icon_3" src="img/photo_icon.svg" alt="">
+                  <div class="upload_img_wrapp" id="blah" style="background-image: url(img/)">
+                  </div>
                 </div>
                 <h3>Добавьте ваше фото</h3>
                 <p>Это повысит доверие покупателей и сделает ваши объявление привлекательнее</p>
@@ -248,8 +250,23 @@
           <button class="input__checkbox-label-bg btn-active appendBtn" data-append-btn = "append_1">Добавить места работы</button>
           <div class="append_templ" data-append-templ = "append_1">
             <div>
+              <div class="work_time">
+                <div>
+                  <div class="yellow_input">
+                    <input class="date_input" type="text" placeholder="Начало" onfocus="(this.type='date')" onblur="(this.type='text')" />
+                  </div>
+                </div>
+                <div>
+                  <div class="yellow_input">
+                    <input class="date_input" type="text" placeholder="Окончание" onfocus="(this.type='date')" onblur="(this.type='text')" />
+                  </div>
+                </div>
+                <div>
+                  <label class="yellow_ch yellow_ch_3"><input type="checkbox" class="timeCh"><span>По настоящее время</span></label>
+                </div>
+              </div>
               <div class="yellow_input">
-                <input type="text" placeholder="Месяц/Год/Окончание" />
+                <input type="text" placeholder="Организация" />
               </div>
               <div class="yellow_input">
                 <textarea placeholder="Обязанности на рабочем месте"></textarea>
@@ -257,8 +274,23 @@
             </div>
           </div>
           <div class="append_content" data-append-content = "append_1">
+            <div class="work_time">
+              <div>
+                <div class="yellow_input">
+                  <input class="date_input" type="text" placeholder="Начало" onfocus="(this.type='date')" onblur="(this.type='text')" />
+                </div>
+              </div>
+              <div>
+                <div class="yellow_input">
+                  <input class="date_input" type="text" placeholder="Окончание" onfocus="(this.type='date')" onblur="(this.type='text')" />
+                </div>
+              </div>
+              <div>
+                <label class="yellow_ch yellow_ch_3"><input type="checkbox" class="timeCh"><span>По настоящее время</span></label>
+              </div>
+            </div>
             <div class="yellow_input">
-              <input type="text" placeholder="Месяц/Год/Окончание" />
+              <input type="text" placeholder="Организация" />
             </div>
             <div class="yellow_input">
               <textarea placeholder="Обязанности на рабочем месте"></textarea>
