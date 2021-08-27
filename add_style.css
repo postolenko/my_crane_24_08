@@ -745,21 +745,6 @@
 	-webkit-transform: translate(-50%, -50%);
 }
 
-/*.photo_icon_3_wrapp .upload_img_wrapp {
-	display: block;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: absolute;
-    top: 32px;
-    left: 33px;
-}*/
-
 .add_photo_2 h3 {
 	padding: 7px 0;
 	margin-bottom: 0;
@@ -788,6 +773,7 @@
 	background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: .5;
 }
 
 .resume_two_cols_2 {
