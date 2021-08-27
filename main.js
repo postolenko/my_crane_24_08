@@ -155,8 +155,10 @@ $(document).ready(function(){
       if (file) {
         console.log(URL.createObjectURL(file));
         $("#blah").css({
+          "display":"block",
           "background-image" : "url("+URL.createObjectURL(file)+")"
         });
+        $("#blah").closest(".add_photo_2").addClass("bg_js");
       }
     }
 
@@ -170,7 +172,7 @@ $(document).ready(function(){
     });
 
     // -----------
-    
+
     $(document).on("change", ".timeCh", function(e) {
       e.preventDefault();
       parent = $(this).closest(".work_time");

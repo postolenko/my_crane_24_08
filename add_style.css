@@ -745,7 +745,7 @@
 	-webkit-transform: translate(-50%, -50%);
 }
 
-.photo_icon_3_wrapp .upload_img_wrapp {
+/*.photo_icon_3_wrapp .upload_img_wrapp {
 	display: block;
     width: 38px;
     height: 38px;
@@ -758,7 +758,7 @@
     position: absolute;
     top: 32px;
     left: 33px;
-}
+}*/
 
 .add_photo_2 h3 {
 	padding: 7px 0;
@@ -775,6 +775,19 @@
     line-height: 18px;
     color: #000;
     padding: 7px 0;
+}
+
+.add_photo_2 .upl_img {
+	display: none;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .resume_two_cols_2 {
