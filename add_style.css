@@ -1054,11 +1054,6 @@
     -webkit-transform: translate(0, -50%);
 }
 
-.work_time.active > div:nth-child(1) {
-	width: 100%;
-	padding-right: 0;
-}
-
 .work_time.active > div:nth-child(2) {
 	display: none;
 }
@@ -1096,15 +1091,6 @@
 
 	.resume_two_cols_2_3.margin_0 {
 		margin: 10px 0;
-	}
-
-}
-
-@media only screen and (max-width: 480px) {
-
-	.work_time.active > div:nth-child(1) {
-	    width: 100%;
-	    padding-right: 0;
 	}
 
 }
