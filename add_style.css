@@ -1312,4 +1312,47 @@ a.link_ch:hover {
 
 }
 
-/*-- /Popup --
+/*-- /Popup --*/
+
+/*-- Form --*/
+  
+.form_2_wrapp .form--row {
+    margin-bottom: 26px;
+}
+.form--row .input:last-child {
+    margin: 0;
+}
+.input__label {
+    min-height: 20px;
+    color: rgba(0,0,0,.5);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    display: block;
+}
+.input__elem {
+    border: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+    min-height: 40px;
+    outline: 0;
+    border-radius: 8px;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 100%;
+    resize: none;
+}
+.form_2_wrapp .input {
+    margin: 0 0 24px;
+    position: relative;
+    max-width: 630px;
+}
+.submit_wrapp {
+    padding: 0 15px;
+}
+.form-chat_2 .form--row {
+	padding-bottom: 25px;
+}
+
+/*-- /Form --*/
