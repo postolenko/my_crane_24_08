@@ -1350,6 +1350,7 @@ a.link_ch:hover {
 }
 .submit_wrapp {
     padding: 0 15px;
+    text-align: left;
 }
 .form-chat_2 .form--row {
 	padding-bottom: 25px;
