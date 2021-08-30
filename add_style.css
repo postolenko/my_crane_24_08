@@ -1355,5 +1355,8 @@ a.link_ch:hover {
 .form-chat_2 .form--row {
 	padding-bottom: 25px;
 }
+textarea.input__elem {
+	padding: 10px 8px;
+}
 
 /*-- /Form --*/
