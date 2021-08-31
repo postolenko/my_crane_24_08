@@ -1348,8 +1348,7 @@ a.link_ch:hover {
     position: relative;
     max-width: 630px;
 }
-.submit_wrapp {
-    padding: 0 15px;
+.form-submit_wrapp {
     text-align: left;
 }
 .form-chat_2 .form--row {
