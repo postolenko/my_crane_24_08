@@ -309,11 +309,21 @@
 
         <div class="resume_item">
           <div class="resume_title_2">Образование</div>
-          <select class="input__elem" name="SORT">
-              <option disabled="">Уровень</option>
-              <option value="val_1" selected="">Опция 1</option>
-              <option value="val_2">Опция 2</option>
-          </select>
+
+          <!-- Dropdown Custom Select -->
+
+          <div class="dropdown_select_custom">
+            <input type="hidden" class="val_input" />
+            <input type="text" readonly class="main_input" value="Уровень" />
+            <div class="dropdown_wrapp">
+              <div value="Общее образовательное" class="active">Общее образовательное</div>
+              <div value="Средне специальное">Средне специальное</div>
+              <div value="Высшее">Высшее</div>
+            </div>
+          </div>
+
+          <!-- /Dropdown Custom Select -->
+
         </div>
 
         <div class="resume_item resume_item_2">

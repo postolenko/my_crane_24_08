@@ -1,4 +1,4 @@
--- About Us --*/
+/*-- About Us --*/
 
 .nav_tab_wrapp {
 	background: rgba(242, 201, 76, .1);
@@ -1359,3 +1359,123 @@ textarea.input__elem {
 }
 
 /*-- /Form --*/
+
+/*-- Dropdown Custom Select --*/
+
+.dropdown_select_custom {
+	position: relative;
+}
+
+.dropdown_select_custom.active {
+	z-index: 3;
+}
+
+.dropdown_select_custom .val_input {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	z-index: -1;
+}
+
+.dropdown_select_custom .main_input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	padding: 0 15px;
+	background-color: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: 1px solid #ffd300 !important;
+	font-size: 16px;
+	line-height: 29px;
+	color: #000;
+	text-align: center;
+	outline: none !important;
+}
+
+.dropdown_select_custom.active .main_input {
+	background-color: #ffd300;
+	color: #000;
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+}
+
+.dropdown_select_custom:before {
+	display: block;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 4px;
+	border-color: transparent transparent transparent #000000;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	z-index: 2;
+}
+
+.dropdown_select_custom.active:before {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	right: 10px;
+}
+
+.dropdown_select_custom .dropdown_wrapp {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: calc(100% - 1px);
+	left: 0;
+	background: #fff;
+	border-radius: 0 0 2px 2px;
+	-webkit-border-radius: 0 0 2px 2px;
+	border: 1px solid #ffd300;
+	padding: 3px 0 3px 0;
+}
+
+.dropdown_select_custom.active .dropdown_wrapp {
+	display: block;
+}
+
+.dropdown_select_custom .dropdown_wrapp > div {
+	padding: 1px 6px;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 22px;
+	color: #808285;
+	-webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.dropdown_select_custom .dropdown_wrapp > div.active {
+	background-color: #fff8d9;
+	color: #000;
+}
+
+.dropdown_select_custom .dropdown_wrapp > div:hover {
+	background-color: #fff8d9;
+}
+
+/*-- /Dropdown Custom Select --*/

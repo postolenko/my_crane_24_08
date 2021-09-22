@@ -184,4 +184,42 @@ $(document).ready(function(){
       }
     });
 
+    // ----------
+
+    $(document).on("click", ".dropdown_select_custom .main_input", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".dropdown_select_custom");
+      parent.toggleClass("active");
+    });
+
+    $(document).on("click", ".dropdown_select_custom .dropdown_wrapp > div", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".dropdown_select_custom");
+      parent.find(".dropdown_wrapp > div").removeClass("active");
+      $(this).addClass("active");
+      value = $(this).attr("value");
+      parent.find(".val_input").val(value);
+      parent.find(".main_input").val(value);
+      parent.removeClass("active");
+    });
+
+    $(this).keydown(function(eventObject){
+      if (eventObject.which == 27) {
+        $(".dropdown_select_custom").removeClass("active");
+      }
+    });
+
+    $(document).mouseup(function(e) {
+      e.preventDefault();
+      hide_element = $(".dropdown_select_custom.active");
+      if (!hide_element.is(e.target)
+          && hide_element.has(e.target).length === 0) {
+          $(".dropdown_select_custom").each(function() {
+            if($(this).hasClass("active")) {
+              $(this).removeClass("active");
+            }
+          });
+      }
+    });
+
 });
